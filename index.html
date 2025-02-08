@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Tables</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .bold {
+            font-weight: 900;
+        }
+        .italic {
+            font-style: italic;
+            color: blue;
+            font-weight: bold;
+        }
+        tbody td {
+            padding: 10px;
+        }
+        button {
+            margin-right: 10px;
+        }
+        img {
+            object-fit: cover;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#bigCats">Big Cats</a>
+        <a href="#dogs">Dogs</a>
+        <a href="#bigFish">Big Fish</a>
+    </nav>
+    
+    <div class="container">
+        <section id="bigCats" class="table-section">
+            <h2>Table 1: Big Cats</h2>
+            <button class="add-btn" onclick="addAnimal('Big Cats')">Add Animal</button>
+            <button class="sort-btn" onclick="sortTable('bigCatsTable')">Sort Table</button>
+            <table id="bigCatsTable">
+                <thead>
+                    <tr>
+                        <th>Species</th>
+                        <th>Name</th>
+                        <th>Size</th>
+                        <th>Location</th>
+                        <th>Image</th>
+                        <th>Edit/Delete</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <hr>
+
+        <section id="dogs" class="table-section">
+            <h2>Table 2: Dogs</h2>
+            <button class="add-btn" onclick="addAnimal('Dog')">Add Animal</button>
+            <button class="sort-btn" onclick="sortTable('dogsTable')">Sort Table</button>
+            <table id="dogsTable">
+                <thead>
+                    <tr>
+                        <th>Species</th>
+                        <th>Name</th>
+                        <th>Size</th>
+                        <th>Location</th>
+                        <th>Image</th>
+                        <th>Edit/Delete</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <hr>
+
+        <section id="bigFish" class="table-section">
+            <h2>Table 3: Big Fish</h2>
+            <button class="add-btn" onclick="addAnimal('Big Fish')">Add Animal</button>
+            <button class="sort-btn" onclick="sortTable('bigFishTable')">Sort Table</button>
+            <table id="bigFishTable">
+                <thead>
+                    <tr>
+                        <th>Species</th>
+                        <th>Name</th>
+                        <th>Size</th>
+                        <th>Location</th>
+                        <th>Image</th>
+                        <th>Edit/Delete</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <hr>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
